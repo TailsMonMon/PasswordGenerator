@@ -34,7 +34,7 @@
             // 
             this.labelNameGenerated.AutoSize = true;
             this.labelNameGenerated.Font = new System.Drawing.Font("Lucida Console", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNameGenerated.Location = new System.Drawing.Point(292, 9);
+            this.labelNameGenerated.Location = new System.Drawing.Point(313, 9);
             this.labelNameGenerated.Name = "labelNameGenerated";
             this.labelNameGenerated.Size = new System.Drawing.Size(239, 14);
             this.labelNameGenerated.TabIndex = 5;
@@ -54,7 +54,7 @@
             // textBoxUsernamePassword
             // 
             this.textBoxUsernamePassword.Font = new System.Drawing.Font("Lucida Console", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxUsernamePassword.Location = new System.Drawing.Point(295, 26);
+            this.textBoxUsernamePassword.Location = new System.Drawing.Point(316, 26);
             this.textBoxUsernamePassword.Multiline = true;
             this.textBoxUsernamePassword.Name = "textBoxUsernamePassword";
             this.textBoxUsernamePassword.ReadOnly = true;
@@ -79,17 +79,18 @@
             this.buttonGenerate.ForeColor = System.Drawing.Color.Black;
             this.buttonGenerate.Location = new System.Drawing.Point(188, 70);
             this.buttonGenerate.Name = "buttonGenerate";
-            this.buttonGenerate.Size = new System.Drawing.Size(101, 23);
+            this.buttonGenerate.Size = new System.Drawing.Size(122, 23);
             this.buttonGenerate.TabIndex = 0;
             this.buttonGenerate.Text = "Generera ➡️";
             this.buttonGenerate.UseVisualStyleBackColor = false;
+            this.buttonGenerate.Click += new System.EventHandler(this.buttonGenerate_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.ClientSize = new System.Drawing.Size(545, 152);
+            this.ClientSize = new System.Drawing.Size(564, 152);
             this.Controls.Add(this.labelNameGenerated);
             this.Controls.Add(this.labeName);
             this.Controls.Add(this.textBoxUsernamePassword);
