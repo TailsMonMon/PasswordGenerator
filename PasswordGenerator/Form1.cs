@@ -16,8 +16,6 @@ namespace PasswordGenerator {
         private void Form1_Load(object sender, EventArgs e) {
         }
 
-        private void buttonSave_Click(object sender, EventArgs e) {
-            labelResult.Text = "Fancy pancy, oh theres nancy!";
-        }
+        
     }
 }

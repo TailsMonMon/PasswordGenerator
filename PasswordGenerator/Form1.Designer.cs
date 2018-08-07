@@ -23,45 +23,80 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            this.buttonSave = new System.Windows.Forms.Button();
-            this.labelResult = new System.Windows.Forms.Label();
+            this.labelNameGenerated = new System.Windows.Forms.Label();
+            this.labeName = new System.Windows.Forms.Label();
+            this.textBoxUsernamePassword = new System.Windows.Forms.TextBox();
+            this.textBoxName = new System.Windows.Forms.TextBox();
+            this.buttonGenerate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // buttonSave
+            // labelNameGenerated
             // 
-            this.buttonSave.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.buttonSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonSave.ForeColor = System.Drawing.Color.Black;
-            this.buttonSave.Location = new System.Drawing.Point(184, 184);
-            this.buttonSave.Name = "buttonSave";
-            this.buttonSave.Size = new System.Drawing.Size(75, 23);
-            this.buttonSave.TabIndex = 0;
-            this.buttonSave.Text = "Spara";
-            this.buttonSave.UseVisualStyleBackColor = false;
-            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
+            this.labelNameGenerated.AutoSize = true;
+            this.labelNameGenerated.Font = new System.Drawing.Font("Lucida Console", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNameGenerated.Location = new System.Drawing.Point(292, 9);
+            this.labelNameGenerated.Name = "labelNameGenerated";
+            this.labelNameGenerated.Size = new System.Drawing.Size(239, 14);
+            this.labelNameGenerated.TabIndex = 5;
+            this.labelNameGenerated.Text = "Genererade namn samt lösenord";
+            this.labelNameGenerated.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // labelResult
+            // labeName
             // 
-            this.labelResult.AutoSize = true;
-            this.labelResult.Font = new System.Drawing.Font("Lucida Handwriting", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelResult.Location = new System.Drawing.Point(12, 233);
-            this.labelResult.Name = "labelResult";
-            this.labelResult.Size = new System.Drawing.Size(0, 36);
-            this.labelResult.TabIndex = 1;
+            this.labeName.AutoSize = true;
+            this.labeName.Font = new System.Drawing.Font("Lucida Console", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labeName.Location = new System.Drawing.Point(9, 9);
+            this.labeName.Name = "labeName";
+            this.labeName.Size = new System.Drawing.Size(47, 14);
+            this.labeName.TabIndex = 4;
+            this.labeName.Text = "Namn:";
+            // 
+            // textBoxUsernamePassword
+            // 
+            this.textBoxUsernamePassword.Font = new System.Drawing.Font("Lucida Console", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxUsernamePassword.Location = new System.Drawing.Point(295, 26);
+            this.textBoxUsernamePassword.Multiline = true;
+            this.textBoxUsernamePassword.Name = "textBoxUsernamePassword";
+            this.textBoxUsernamePassword.ReadOnly = true;
+            this.textBoxUsernamePassword.Size = new System.Drawing.Size(236, 113);
+            this.textBoxUsernamePassword.TabIndex = 3;
+            // 
+            // textBoxName
+            // 
+            this.textBoxName.Font = new System.Drawing.Font("Lucida Console", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxName.Location = new System.Drawing.Point(12, 26);
+            this.textBoxName.Multiline = true;
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.Size = new System.Drawing.Size(170, 113);
+            this.textBoxName.TabIndex = 2;
+            // 
+            // buttonGenerate
+            // 
+            this.buttonGenerate.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.buttonGenerate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonGenerate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonGenerate.Font = new System.Drawing.Font("Lucida Console", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonGenerate.ForeColor = System.Drawing.Color.Black;
+            this.buttonGenerate.Location = new System.Drawing.Point(188, 70);
+            this.buttonGenerate.Name = "buttonGenerate";
+            this.buttonGenerate.Size = new System.Drawing.Size(101, 23);
+            this.buttonGenerate.TabIndex = 0;
+            this.buttonGenerate.Text = "Generera ➡️";
+            this.buttonGenerate.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.ClientSize = new System.Drawing.Size(484, 461);
-            this.Controls.Add(this.labelResult);
-            this.Controls.Add(this.buttonSave);
+            this.ClientSize = new System.Drawing.Size(545, 152);
+            this.Controls.Add(this.labelNameGenerated);
+            this.Controls.Add(this.labeName);
+            this.Controls.Add(this.textBoxUsernamePassword);
+            this.Controls.Add(this.textBoxName);
+            this.Controls.Add(this.buttonGenerate);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.ForeColor = System.Drawing.Color.Black;
-            this.MaximumSize = new System.Drawing.Size(500, 500);
-            this.MinimumSize = new System.Drawing.Size(200, 100);
             this.Name = "Form1";
             this.Opacity = 0.9D;
             this.Text = "Password Generator";
@@ -73,8 +108,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Button buttonSave;
-        private System.Windows.Forms.Label labelResult;
+        private System.Windows.Forms.Label labelNameGenerated;
+        private System.Windows.Forms.Label labeName;
+        private System.Windows.Forms.TextBox textBoxUsernamePassword;
+        private System.Windows.Forms.TextBox textBoxName;
+        private System.Windows.Forms.Button buttonGenerate;
     }
 }
 
